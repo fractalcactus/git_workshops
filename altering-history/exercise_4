@@ -1,0 +1,67 @@
+#!/usr/bin/env bash
+
+# start in a dir where you'd put your code projects
+rm -rf repo_4
+
+mkdir repo_4
+
+cd repo_4
+
+git init
+
+cat <<README >"README.md"
+This is the README for repo_4
+woop woop so hardcore
+README
+
+git add README.md
+
+git commit -m "FEAT: initial commit"
+
+cat <<GITIGNORE >".gitignore"
+.tfstate
+.vscode/
+coverage/
+node_modules/
+lib/
+.eslintcache
+pids
+*.pid
+*.swp
+*.seed
+*.pid.lock
+*.tsbuildinfo
+.env
+.DS_STORE
+GITIGNORE
+
+git add .gitignore
+
+git commit -m "feat: add gitignore"
+
+npm init -y
+
+git add package.json
+
+git commit -m "feat: run npm init"
+
+touch index.html
+
+git add index.html
+
+git commit -m "feat: add index"
+
+touch "styles.css"
+
+git add styles.css
+
+git commit -m "feat: style the homepage"
+
+touch "header.html.erb"
+
+touch "header-styles.css"
+
+git add header.html.erb
+git add header-styles.css
+
+git commit -m "feat: add header to homepage"
