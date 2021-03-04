@@ -45,7 +45,7 @@ git add package.json
 
 git commit -m "feat: run npm init"
 
-touch index.html && touch .DS_Store
+touch index.html && touch DS_Store
 
 git add .
 
