@@ -3,14 +3,14 @@
 # start in a dir where you'd put your code projects
 rm -rf repo_2
 
-mkdir repo_2 
+mkdir repo_2
 
-cd repo_2 
+cd repo_2
 
 git init
 
 cat <<README >"README.md"
-This is the README for repo_2 
+This is the README for repo_2
 doo doo da da da doodily doo
 README
 
@@ -45,7 +45,7 @@ git add package.json
 
 git commit -m "feat: run npm init"
 
-touch index.html && touch my_diary.txt
+touch index.html && touch .DS_Store
 
 git add .
 
