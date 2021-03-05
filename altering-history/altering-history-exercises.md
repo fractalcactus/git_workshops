@@ -23,7 +23,7 @@ change the most recent commit message from "feat: run npm i" to "feat: run npm i
 remove `.DS_Store` from the previous commit, without altering the commit message.
 
 ### 3. Alter any commit message
-change the second commit message from "feat: add fitignore" to "feat: add gitignore"
+change the third commit message from "feat: add fitignore" to "feat: add gitignore"
 
 ### 4. Merge commits together
 Merge all the work in the last three commits into one commit, with the message "feat: add a styled homepage"
