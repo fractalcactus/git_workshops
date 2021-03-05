@@ -63,6 +63,19 @@ Here are the solutions I came up with, but there's more than one way to shear a 
 
 
 1. `git rebase -i HEAD~3`
+    <img width="780" alt="image" src="https://user-images.githubusercontent.com/8527715/110064534-24446b80-7dd2-11eb-95a0-d39659cdb991.png">
+    
+    save and quit
+    
+    <img width="754" alt="image" src="https://user-images.githubusercontent.com/8527715/110064565-34f4e180-7dd2-11eb-832a-05b92f62d09f.png">
+    
+    add your new commit message
+    
+    <img width="705" alt="image" src="https://user-images.githubusercontent.com/8527715/110064670-72596f00-7dd2-11eb-988a-ca21d391184f.png">
+    
+    check out the logs to see that you successfully updated that commit message
+    
+
     
     
   ## Notes for the real world
