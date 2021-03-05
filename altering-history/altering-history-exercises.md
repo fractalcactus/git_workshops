@@ -62,7 +62,10 @@ Here are the solutions I came up with, but there's more than one way to shear a 
 
 
 
-1. `git rebase -i HEAD~3`, follow the `squash` process:
-    ```
-    TODO: add screenshots
-    ```
+1. `git rebase -i HEAD~3`
+    
+    
+  ## Notes for the real world
+- Be aware that if you've rewritten history that is already on the internet e.g github/bitbucket, when you push you'll need to use `--force` If others are working on a copy of the branch then you might create some chaos :slightly_smiling_face:
+- The heuristic I go by is to only alter history that I have access to, e.g a feature branch in PR, or a local branch. Any other history alterations should include chatting with your coworkers about how to manage the process.
+
