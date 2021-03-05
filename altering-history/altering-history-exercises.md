@@ -41,10 +41,26 @@ Here are the solutions I came up with, but there's more than one way to shear a 
     git commit --amend --no-edit
     git show # note that the hash has changed, as the files in the commit changed
     ```
-1. `git rebase -i HEAD~2`, follow the `reword` process:
-    ```
-    TODO: add screenshots
-    ```
+1. `git rebase -i HEAD~3`:
+
+
+   use the `r` a.k.a `reword` command before the commit you want to reword. Note that this is  not the stage where you can reword the message, you will make edits to the message in the next step. Any changes you make to the commit message here will disappear.
+   
+   
+    <img width="764" alt="image" src="https://user-images.githubusercontent.com/8527715/110055810-8ac18d80-7dc2-11eb-9ecf-05f86b9004ac.png">
+   
+   
+   save and quit this screen, and the next step will pop up
+
+    <img width="827" alt="image" src="https://user-images.githubusercontent.com/8527715/110055909-b80e3b80-7dc2-11eb-8f87-14e4c1ee5bf5.png">
+
+    make the changes to your commit message, save and quit again
+
+    git should output something along the lines of this to your terminal: `[detached HEAD eb1d071] feat: add gitignore`
+
+    check out the logs to see that you successfully updated that commit message
+
+
 
 1. `git rebase -i HEAD~3`, follow the `squash` process:
     ```
